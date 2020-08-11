@@ -1,0 +1,49 @@
+@import "../../styles/main";
+
+.logo-box {
+  width: 18rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  z-index: 20;
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 0rem 1rem;
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    font-weight: $normal;
+    font-family: "Space Mono", monospace;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+    &:link,
+    &:active {
+      color: $dark-blue;
+    }
+
+    &:hover {
+      color: $light-gray;
+      border-bottom: 2px solid $light-red;
+    }
+  }
+}

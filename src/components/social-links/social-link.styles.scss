@@ -1,0 +1,20 @@
+@import "../../styles/main";
+
+.social-link-box {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $light-red;
+  }
+
+  &:hover svg {
+    fill: $light-gray;
+  }
+}

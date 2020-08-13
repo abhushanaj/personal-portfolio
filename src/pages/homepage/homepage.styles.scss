@@ -1,5 +1,18 @@
 @import "../../styles/main";
 
 .other-content {
-  margin-top: 4rem;
+  margin-top: 5rem;
+}
+
+.secondary-heading {
+  margin: 3rem auto;
+  text-align: center;
+  color: $dark-blue;
+  font-size: 4.5rem;
+  border-bottom: 4px solid $light-red;
+  width: max-content;
+  font-family: "Space Mono", monospace, sans-serif;
+  @media only screen and(max-width:500px) {
+    font-size: 3.2rem;
+  }
 }

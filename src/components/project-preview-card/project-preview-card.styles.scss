@@ -1,0 +1,203 @@
+@import "../../styles/main";
+
+.project {
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7rem auto;
+    width: 90%;
+    border-radius: 12px;
+    @include shadow-light();
+
+    @media only screen and(max-width:850px) {
+      width: 100%;
+    }
+
+    @media only screen and(max-width:740px) {
+      flex-direction: column;
+      width: 70%;
+    }
+    @media only screen and(max-width:500px) {
+      width: 90%;
+    }
+    @media only screen and(max-width:375px) {
+      width: 100%;
+    }
+  }
+
+  &__cover {
+    flex: 0 0 50%;
+    padding: 2rem;
+    border-radius: 12px;
+    @media only screen and(max-width:740px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media only screen and(max-width:630px) {
+      padding: 1.5rem;
+      width: 100%;
+    }
+
+    @media only screen and(max-width:375px) {
+      display: none;
+    }
+
+    &--2 {
+      order: 2;
+      @media only screen and(max-width:740px) {
+        order: 1;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  &__details {
+    flex: 0 0 50%;
+    padding: 4rem;
+
+    @media only screen and(max-width:986px) {
+      padding: 2rem;
+    }
+
+    &--2 {
+      order: 1;
+      @media only screen and(max-width:740px) {
+        order: 2;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-family: "Space Mono", monospace, sans-serif;
+    color: $dark-blue;
+    margin-bottom: 2rem;
+    font-weight: $bold;
+    @media only screen and(max-width:850px) {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+    @media only screen and(max-width:740px) {
+      text-align: center;
+    }
+    @media only screen and(max-width:630px) {
+      margin-top: 0rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    font-weight: $normal;
+    color: $dark-blue;
+    @media only screen and(max-width:1000px) {
+      font-size: 1.2rem;
+    }
+    @media only screen and(max-width:740px) {
+      text-align: center;
+    }
+  }
+}
+
+.tag__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  margin-bottom: 2rem;
+  @media only screen and(max-width:740px) {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: 630px) {
+    width: 100%;
+  }
+  @media only screen and(max-width:400px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .tag {
+    border: 1px solid $light-red;
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: $white;
+    background: $light-red;
+    border-radius: 1rem;
+    &:not(:first-child) {
+      margin-left: 1rem;
+      @media only screen and(max-width:400px) {
+        margin-left: 0;
+      }
+    }
+    @media only screen and(max-width:400px) {
+      margin: 0.5rem 1rem;
+    }
+  }
+}
+
+.btn__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  @media only screen and(max-width:1200px) {
+    width: 90%;
+  }
+  @media only screen and(max-width:1075px) {
+    width: 100%;
+  }
+  @media only screen and(max-width:740px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width: 630px) {
+    width: 100%;
+  }
+  @media only screen and(max-width:350px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  display: block;
+  font-family: "Space Mono", monospace;
+  color: $dark-blue;
+  background: transparent;
+  font-weight: $bold;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.3rem;
+  outline: 1px solid $light-red;
+  @media only screen and(max-width:350px) {
+    margin: 0.5rem 1rem;
+  }
+
+  @media only screen and(max-width:1000px) {
+    padding: 0.5rem 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  &--primary {
+    @include primary-button();
+    &:hover {
+      @include secondary-button();
+    }
+  }
+
+  &--secondary {
+    @include secondary-button();
+    &:hover {
+      @include primary-button();
+    }
+  }
+}

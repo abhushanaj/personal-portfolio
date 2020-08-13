@@ -7,6 +7,10 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0rem;
+  @media only screen and(max-width:425px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
   svg {
     width: 100%;

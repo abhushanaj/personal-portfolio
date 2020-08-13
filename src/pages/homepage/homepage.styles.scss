@@ -1,38 +1,5 @@
 @import "../../styles/main";
 
-/* Typography in Headers */
-
-.main-heading {
-  font-family: "Space Mono", monospace;
-  font-size: 6rem;
-  color: $dark-blue;
-  font-weight: $bold;
-}
-
-.tagline {
-  width: 80%;
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  color: $dark-blue;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5rem;
-  // background-color: pink;
-
-  &__content {
-    flex: 0 0 50%;
-  }
-  &__image {
-    flex: 0 0 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      max-width: 60%;
-    }
-  }
+.other-content {
+  margin-top: 4rem;
 }

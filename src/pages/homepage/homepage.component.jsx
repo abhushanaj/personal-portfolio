@@ -11,7 +11,9 @@ const HomePage = () => {
       <Header />
 
       <div className="other-content u-container">
-        <h2 className="secondary-heading">Projects Done</h2>
+        <h2 className="secondary-heading" id="projects">
+          Projects Done
+        </h2>
         <ProjectOverview />
       </div>
     </>

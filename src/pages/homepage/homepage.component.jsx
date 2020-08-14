@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "../../components/header/header.component";
-import ProjectPreviewCard from "../../components/project-preview-card/project-preview-card.component";
+import ProjectOverview from "../../components/project-overview/project-preview.component";
 
 import "./homepage.styles.scss";
 
@@ -12,8 +12,7 @@ const HomePage = () => {
 
       <div className="other-content u-container">
         <h2 className="secondary-heading">Projects Done</h2>
-        <ProjectPreviewCard />
-        <ProjectPreviewCard changedOrder />
+        <ProjectOverview />
       </div>
     </>
   );

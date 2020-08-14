@@ -1,46 +1,42 @@
 import React from "react";
 
+import TagLists from "../taglists/taglists.component";
+import SecondaryButton from "../ button/button.component";
+import { PrimaryButton, SecondaryTagButton } from "../ button/button.component";
+
 import "./project-preview-card.styles.scss";
 
-const ProjectPreviewCard = ({ changedOrder }) => {
-  console.log(changedOrder);
+const ProjectPreviewCard = (props) => {
+  const {
+    projectTitle,
+    projectDescription,
+    viewDemoLink,
+    viewCodeLink,
+    readMoreLink,
+    changedOrder,
+    coverImg,
+  } = props;
+
   return (
     <article className="project__card ">
       <div
         className={`project__cover ${changedOrder ? "project__cover--2" : ""}`}
       >
-        <img
-          src="https://raw.githubusercontent.com/abhu-A-J/Eye-for-an-UI/master/Insure-Landing-Page/design/desktop-preview.jpg"
-          alt="Insure Cover Cover"
-        />
+        <img src={coverImg} alt="Insure Cover Cover" />
       </div>
       <div
         className={`project__details ${
           changedOrder ? "project__details--2" : ""
         }`}
       >
-        <h3 className="project__title">Fictious Client</h3>
-        <p className="project__desc">
-          Fictious Client is a collection of over 10 beautiful and elegantly
-          designed, responsive landing pages for fictional product based
-          companies to learn more in depth about HTML, CSS and
-          Responsive-Design.
-        </p>
+        <h3 className="project__title">{projectTitle}</h3>
+        <p className="project__desc">{projectDescription}</p>
 
-        <ul className="tag__lists">
-          <li className="tag">#HTML</li>
-          <li className="tag">#CSS</li>
-          <li className="tag">#Responsive-Design</li>
-        </ul>
-
+        <TagLists />
         <div className="btn__group">
-          <a className="btn btn--primary" href="#!">
-            View Demo
-          </a>
-          <a className="btn btn--secondary" href="#!">
-            View Code
-          </a>
-          <button className="btn btn--secondary">Read More</button>
+          <PrimaryButton url={viewDemoLink}>View Demo</PrimaryButton>
+          <SecondaryTagButton url={viewCodeLink}>View Code</SecondaryTagButton>
+          <SecondaryButton routeTo={readMoreLink}>Read More</SecondaryButton>
         </div>
       </div>
     </article>

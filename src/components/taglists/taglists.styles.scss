@@ -1,0 +1,38 @@
+@import "../../styles/main";
+
+.tag__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  margin-bottom: 2rem;
+  @media only screen and(max-width:740px) {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  @media only screen and (max-width: 630px) {
+    width: 100%;
+  }
+  @media only screen and(max-width:400px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .tag {
+    border: 1px solid $light-red;
+    padding: 0.2rem 1rem;
+    font-size: 1.2rem;
+    color: $white;
+    background: $light-red;
+    border-radius: 1rem;
+    &:not(:first-child) {
+      margin-left: 1rem;
+      @media only screen and(max-width:400px) {
+        margin-left: 0;
+      }
+    }
+    @media only screen and(max-width:400px) {
+      margin: 0.5rem 1rem;
+    }
+  }
+}

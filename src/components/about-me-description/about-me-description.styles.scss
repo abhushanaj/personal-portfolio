@@ -1,0 +1,14 @@
+@import "../../styles/main";
+
+.about-title {
+  color: $dark-blue;
+  font-size: 3rem;
+  font-weight: $bold;
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+.about-desc {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: $dark-blue;
+}

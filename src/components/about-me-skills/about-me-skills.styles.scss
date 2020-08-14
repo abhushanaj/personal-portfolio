@@ -1,0 +1,14 @@
+@import "../../styles/main";
+
+.skills-grid {
+  .tag__lists {
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    .tag {
+      margin: 1rem;
+    }
+  }
+}

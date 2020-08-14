@@ -16,19 +16,6 @@
   &__right {
     flex: 0 0 70%;
     padding-left: 6rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
   }
-}
-
-.about-title {
-  color: $dark-blue;
-  font-size: 3rem;
-  font-weight: $bold;
-  font-family: "Space Mono", monospace, sans-serif;
-}
-
-.about-desc {
-  margin: 1rem 0;
-  font-size: 1.4rem;
-  color: $dark-blue;
 }

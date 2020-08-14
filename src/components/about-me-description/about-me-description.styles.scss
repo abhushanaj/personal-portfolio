@@ -11,4 +11,7 @@
   margin: 1rem 0;
   font-size: 1.4rem;
   color: $dark-blue;
+  @media only screen and(max-width:840px) {
+    font-size: 1.2rem;
+  }
 }

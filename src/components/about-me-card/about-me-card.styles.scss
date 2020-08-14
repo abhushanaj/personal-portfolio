@@ -10,6 +10,14 @@
   transform-origin: top;
   transform-box: content-box;
   will-change: transform;
+  @media only screen and(max-width:750px) {
+    animation: none;
+    margin-top: 2rem;
+  }
+
+  @media only screen and(max-width:550px) {
+    width: 100%;
+  }
 
   &__image {
     display: flex;

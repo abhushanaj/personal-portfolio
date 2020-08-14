@@ -11,12 +11,13 @@ const skillsSet = [
   "React",
   "Redux",
   "Sass",
+  "Styled-Components",
   "TypeScript",
   "Webpack",
   "Babel",
-  "Styled-Components",
+  "Git",
+  "Github",
   "npm",
-  "Node.js",
 ];
 
 const AboutMeSkills = () => {

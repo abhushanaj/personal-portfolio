@@ -26,7 +26,9 @@ const AboutMeCard = () => {
         <p className="connect-me"> Let's Connect </p>
 
         <ul className="reach-out">
-          <li>abhushanadhikarijoshi@gmail.com</li>
+          <li>
+            <a href="mailto: abhushanadhikarijoshi@gmail.com">Gmail</a>
+          </li>
           <li>
             <a href={linkedInURL} target="_blank" rel="noopener noreferrer">
               LinkedIn

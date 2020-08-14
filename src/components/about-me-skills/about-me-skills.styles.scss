@@ -9,6 +9,9 @@
     width: 100%;
     .tag {
       margin: 1rem;
+      @media only screen and(max-width:450px) {
+        margin: 0.5rem;
+      }
     }
   }
 }

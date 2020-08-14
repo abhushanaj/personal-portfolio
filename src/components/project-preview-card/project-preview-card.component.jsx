@@ -15,6 +15,7 @@ const ProjectPreviewCard = (props) => {
     readMoreLink,
     changedOrder,
     coverImg,
+    tagLists,
   } = props;
 
   return (
@@ -32,7 +33,8 @@ const ProjectPreviewCard = (props) => {
         <h3 className="project__title">{projectTitle}</h3>
         <p className="project__desc">{projectDescription}</p>
 
-        <TagLists />
+        <TagLists tagLists={tagLists} />
+
         <div className="btn__group">
           <PrimaryButton url={viewDemoLink}>View Demo</PrimaryButton>
           <SecondaryTagButton url={viewCodeLink}>View Code</SecondaryTagButton>

@@ -8,6 +8,7 @@ const projectList = [
     viewDemoLink: "",
     viewCodeLink: "",
     readMoreLink: "/details/fictiousclient",
+    tagLists: ["HTML", "CSS", "Responsive Design"],
     coverImg:
       "https://raw.githubusercontent.com/abhu-A-J/Eye-for-an-UI/master/Insure-Landing-Page/design/desktop-preview.jpg",
   },
@@ -20,6 +21,7 @@ const projectList = [
     viewDemoLink: "",
     viewCodeLink: "",
     readMoreLink: "/details/moogli",
+    tagLists: ["HTML", "CSS", "Responsive Design"],
     coverImg:
       "https://raw.githubusercontent.com/abhu-A-J/Eye-for-an-UI/master/Insure-Landing-Page/design/desktop-preview.jpg",
   },

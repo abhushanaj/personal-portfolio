@@ -2,12 +2,16 @@ import React from "react";
 
 import "./taglists.styles.scss";
 
-const TagLists = () => {
+const TagLists = ({ tagLists }) => {
   return (
     <ul className="tag__lists">
-      <li className="tag">#HTML</li>
-      <li className="tag">#CSS</li>
-      <li className="tag">#Responsive-Design</li>
+      {tagLists.map((tag, index) => {
+        return (
+          <li className="tag" key={index}>
+            {tag}
+          </li>
+        );
+      })}
     </ul>
   );
 };

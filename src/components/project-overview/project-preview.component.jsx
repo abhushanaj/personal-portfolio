@@ -6,14 +6,13 @@ import projectList from "./project-lists";
 import "./project-preview.styles.scss";
 
 const ProjectOverview = () => {
-  console.log(projectList);
   return (
     <>
       {projectList.map((project, index) => {
         if (index % 2 === 0) {
-          return <ProjectPreviewCard {...project} />;
+          return <ProjectPreviewCard key={index} {...project} />;
         } else {
-          return <ProjectPreviewCard changedOrder {...project} />;
+          return <ProjectPreviewCard key={index} changedOrder {...project} />;
         }
       })}
     </>

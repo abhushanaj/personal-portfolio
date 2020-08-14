@@ -1,0 +1,71 @@
+@import "../../styles/main";
+
+.custom-form {
+  padding-bottom: 5rem;
+}
+.form {
+  width: 40%;
+  margin: 0 auto;
+
+  @media only screen and(min-width:1600px) {
+    width: 60%;
+  }
+
+  @media only screen and(max-width:900px) {
+    width: 80%;
+  }
+  @media only screen and(max-width:500px) {
+    width: 100%;
+  }
+  label {
+    color: $dark-blue;
+    font-family: "Space Mono", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    display: block;
+    font-weight: $bold;
+  }
+  button {
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+  }
+  small {
+    color: $dark-red;
+    font-size: 1.1rem;
+    font-weight: $bold;
+  }
+}
+
+.input__group {
+  input {
+    font-family: "Montserrat", sans-serif;
+    color: $dark-blue;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    outline: 0;
+    border: 1px solid $light-gray;
+
+    &:focus {
+      border: 2px solid $light-gray;
+    }
+  }
+  #message {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border: 1px solid $light-gray;
+
+    height: 180px;
+    padding: 2rem;
+    resize: none;
+    color: $dark-blue;
+    font-family: "Montserrat", sans-serif;
+
+    &:focus {
+      border: 2px solid $light-gray;
+      outline: none !important;
+    }
+  }
+}

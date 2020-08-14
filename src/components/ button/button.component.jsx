@@ -11,6 +11,14 @@ export const PrimaryButton = ({ children, url }) => {
   );
 };
 
+export const SubmitButton = ({ children, ...otherProps }) => {
+  return (
+    <button className="btn btn--submit" {...otherProps} type="submit">
+      {children}
+    </button>
+  );
+};
+
 export const SecondaryTagButton = ({ children, url }) => {
   return (
     <a className="btn btn--secondary" href={url}>

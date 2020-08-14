@@ -35,4 +35,12 @@
       @include primary-button();
     }
   }
+
+  &--submit {
+    @include primary-button();
+    &:hover {
+      background: rgba($light-red, 0.8);
+      outline: 1px solid rgba($light-red, 0.8);
+    }
+  }
 }

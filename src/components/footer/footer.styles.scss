@@ -1,0 +1,25 @@
+@import "../../styles/main";
+
+footer {
+  padding: 4rem 0rem;
+  background: rgba($trial-gray, 1);
+  margin-top: 5rem;
+}
+.footer {
+  text-align: center;
+  font-family: "Space Mono", monospace, sans-serif;
+
+  &__line {
+    font-size: 2rem;
+    word-spacing: 3px;
+    color: $dark-blue;
+    span {
+      color: red;
+    }
+  }
+
+  .name {
+    text-decoration: none;
+    color: $dark-red;
+  }
+}

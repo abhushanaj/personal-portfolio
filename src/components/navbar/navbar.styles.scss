@@ -48,15 +48,13 @@
     border-bottom: 2px solid transparent;
     padding-bottom: 1rem;
     transition: all 0.2s ease-in-out;
+    color: $dark-blue;
+
     @media only screen and(max-width:425px) {
       font-size: 1.4rem;
     }
     @media only screen and(max-width:320px) {
       font-size: 1.25rem;
-    }
-    &:link,
-    &:active {
-      color: $dark-blue;
     }
 
     &:hover {

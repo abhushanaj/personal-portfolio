@@ -20,9 +20,9 @@ const Navbar = () => {
           </a>
         </li>
         <li className="navbar__item">
-          <a href="#!" className="navbar__link">
+          <Link to="/about" className="navbar__link">
             About
-          </a>
+          </Link>
         </li>
         <li className="navbar__item">
           <a href="#!" className="navbar__link">

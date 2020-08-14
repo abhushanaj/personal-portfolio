@@ -1,6 +1,34 @@
 @import "../../styles/main";
 
 .about-section {
-  min-height: 90vh;
-  padding-top: 6rem;
+  // min-height: 90vh;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about {
+  &__left {
+    flex: 0 0 30%;
+    // background: yellow;
+  }
+  &__right {
+    flex: 0 0 70%;
+    padding-left: 6rem;
+    padding-top: 6rem;
+  }
+}
+
+.about-title {
+  color: $dark-blue;
+  font-size: 3rem;
+  font-weight: $bold;
+  font-family: "Space Mono", monospace, sans-serif;
+}
+
+.about-desc {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: $dark-blue;
 }

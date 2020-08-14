@@ -1,0 +1,70 @@
+@import "../../styles/main";
+
+.aboutme {
+  width: 80%;
+  @include shadow-light();
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  animation: dangle 4s ease-in-out infinite alternate;
+  transform-origin: top;
+  transform-box: content-box;
+  will-change: transform;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  &__details {
+    margin-top: 2rem;
+  }
+}
+
+/* Typography for about card */
+
+.connect-me {
+  color: $dark-blue;
+  font-family: "Space Mono", monospace, sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.reach-out {
+  text-align: left;
+  li {
+    color: $dark-blue;
+    font-size: 1.4rem;
+    &:first-child {
+      padding-top: 1rem;
+    }
+    a {
+      color: $dark-red;
+      &:hover {
+        color: $light-red;
+      }
+    }
+  }
+}
+.pin {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateX(-50%);
+}
+
+@keyframes dangle {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}

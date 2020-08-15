@@ -8,9 +8,9 @@ const CustomForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState({
-    userName: true,
-    email: true,
-    message: true,
+    userName: false,
+    email: false,
+    message: false,
   });
 
   const handleSubmit = (e) => {
@@ -47,7 +47,7 @@ const CustomForm = () => {
             value={userName}
             onChange={(e) => {
               setUserName(e.target.value);
-              if (e.target.value.length >= 1) {
+              if (e.target.value.length >= 2) {
                 handleError("userName", false);
               } else {
                 handleError("userName", true);
@@ -92,7 +92,7 @@ const CustomForm = () => {
             onChange={(e) => {
               setMessage(e.target.value);
               handleError("message", false);
-              if (e.target.value.length >= 2) {
+              if (e.target.value.length >= 5) {
                 handleError("message", false);
               } else {
                 handleError("message", true);

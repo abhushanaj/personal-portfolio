@@ -17,14 +17,14 @@ const AboutMeDescription = () => {
       </p>
       <p className="about-desc">
         I'm an engineer based in Shillong, Meghalaya ,India. I am a self-taught,
-        passionate hardworking Web Developer looking forward to collaborating
-        and learning from engineer's much smarter than me while building
-        products used by people.
+        passionate and hardworking Web Developer looking forward to
+        collaborating and learning from engineer's much smarter than me while
+        building products used by people.
       </p>
       <p className="about-desc">
         I always love working within a team and I see myself working as a Senior
-        Developer, architecting high performant products that is being used by
-        thousands of people in the near future.
+        Developer, architecting highly performant web applications potentially
+        being used by thousands of people in the near future.
       </p>
     </>
   );

@@ -10,9 +10,13 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 6rem;
+  @media only screen and(max-width:650px) {
+    flex-direction: column;
+  }
 
   &__left {
     flex: 0 0 30%;
+    // background: green;
     .project__name {
       color: $dark-blue;
       font-size: 2.4rem;
@@ -21,14 +25,30 @@
       border-top: 2px solid $light-red;
       width: max-content;
       padding-top: 4rem;
+      @media only screen and(max-width:650px) {
+        text-align: center;
+        width: 100%;
+      }
     }
     .project__desc {
       color: $dark-blue;
       width: 80%;
       font-size: 1.4rem;
+      @media only screen and(max-width:880px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and(max-width:650px) {
+        width: 100%;
+        text-align: center;
+      }
     }
     .btn--secondary {
       width: max-content;
+      padding: 1rem 1.5rem;
+      @media only screen and(max-width:650px) {
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -38,6 +58,9 @@
     // background-color: yellow;
     padding-left: 4rem;
     padding-top: 2rem;
+    @media only screen and(max-width:800px) {
+      padding-left: 0;
+    }
     .project__background,
     .static__preview {
       color: $dark-blue;
@@ -45,12 +68,21 @@
       font-family: "Space Mono", monospace, sans-serif;
       padding-top: 2rem;
       text-align: center;
+      @media only screen and(max-width:650px) {
+        border-top: 2px solid $light-red;
+      }
     }
     .project__reason {
       color: $dark-blue;
       font-size: 1.4rem;
       margin-top: 4rem;
       margin-bottom: 3rem;
+      @media only screen and(max-width:880px) {
+        font-size: 1.2rem;
+      }
+      @media only screen and(max-width:800px) {
+        padding-left: 2rem;
+      }
     }
   }
 }

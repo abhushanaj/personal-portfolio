@@ -1,6 +1,5 @@
 import React from "react";
 
-import ProjectPageCover from "../../components/project-page-cover/project-page-cover.component";
 import { SecondaryTagButton } from "../../components/ button/button.component";
 
 import "./project-details-page.styles.scss";
@@ -10,7 +9,6 @@ const ProjectDetailsPage = ({ match }) => {
   console.log(projectName);
   return (
     <div className="project__information u-container">
-      <ProjectPageCover />
       <div className="project-page">
         <div className="project-page__left">
           <h1 className="project__name">Fictious Client</h1>
@@ -37,9 +35,12 @@ const ProjectDetailsPage = ({ match }) => {
             consequuntur ab quasi exercitationem? A error ratione voluptates?
           </p>
           <h2 className="static__preview">Static Preview</h2>
-          <div className="preview__collage">
-            <img src="" alt="" />
-          </div>
+          <div
+            className="preview__collage"
+            style={{
+              backgroundImage: `url("https://user-images.githubusercontent.com/49617450/90335496-0d375b00-dff3-11ea-8643-37c6f6b5f40c.png")`,
+            }}
+          />
         </div>
       </div>
     </div>

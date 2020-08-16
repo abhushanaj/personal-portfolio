@@ -2,14 +2,13 @@
 
 .project__information {
   padding-top: 5rem;
-  min-height: 90vh;
 }
 
 .project-page {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 6rem;
+  padding-top: 3rem;
   @media only screen and(max-width:650px) {
     flex-direction: column;
   }
@@ -73,10 +72,10 @@
       }
     }
     .project__reason {
-      color: $dark-blue;
       font-size: 1.4rem;
       margin-top: 4rem;
       margin-bottom: 3rem;
+      color: $dark-blue;
       @media only screen and(max-width:880px) {
         font-size: 1.2rem;
       }
@@ -93,6 +92,12 @@
   margin-top: 5rem;
   margin-bottom: 2rem;
   width: 100%;
-  min-height: 40rem;
-  background: $dark-blue;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include shadow-light();
 }

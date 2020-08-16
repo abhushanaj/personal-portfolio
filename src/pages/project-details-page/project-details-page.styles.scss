@@ -1,0 +1,66 @@
+@import "../../styles/main";
+
+.project__information {
+  padding-top: 5rem;
+  min-height: 90vh;
+}
+
+.project-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 6rem;
+
+  &__left {
+    flex: 0 0 30%;
+    .project__name {
+      color: $dark-blue;
+      font-size: 2.4rem;
+      font-family: "Space Mono", monospace, sans-serif;
+      margin-bottom: 2rem;
+      border-top: 2px solid $light-red;
+      width: max-content;
+      padding-top: 4rem;
+    }
+    .project__desc {
+      color: $dark-blue;
+      width: 80%;
+      font-size: 1.4rem;
+    }
+    .btn--secondary {
+      width: max-content;
+    }
+  }
+
+  &__right {
+    flex: 0 0 70%;
+    min-height: 50vh;
+    // background-color: yellow;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    .project__background,
+    .static__preview {
+      color: $dark-blue;
+      font-size: 2.4rem;
+      font-family: "Space Mono", monospace, sans-serif;
+      padding-top: 2rem;
+      text-align: center;
+    }
+    .project__reason {
+      color: $dark-blue;
+      font-size: 1.4rem;
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+/* Preview Collage */
+
+.preview__collage {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  min-height: 40rem;
+  background: $dark-blue;
+}

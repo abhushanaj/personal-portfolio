@@ -21,7 +21,12 @@ export const SubmitButton = ({ children, ...otherProps }) => {
 
 export const SecondaryTagButton = ({ children, url }) => {
   return (
-    <a className="btn btn--secondary" href={url}>
+    <a
+      className="btn btn--secondary"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
     </a>
   );

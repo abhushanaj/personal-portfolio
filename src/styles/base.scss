@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%; //1rem=10px
+  @media only screen and(min-width:1600px) {
+    font-size: 78%;
+  }
 }
 
 body {

@@ -5,7 +5,12 @@ import "./button.styles.scss";
 
 export const PrimaryButton = ({ children, url }) => {
   return (
-    <a className="btn btn--primary" href={url}>
+    <a
+      className="btn btn--primary"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {children}
     </a>
   );

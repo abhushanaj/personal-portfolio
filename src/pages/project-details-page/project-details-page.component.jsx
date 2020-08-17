@@ -1,44 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { SecondaryTagButton } from "../../components/ button/button.component";
+
+import projectDetails from "./projectDetails";
 
 import "./project-details-page.styles.scss";
 
 const ProjectDetailsPage = ({ match }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { projectName } = match.params;
-  console.log(projectName);
+  const data = projectDetails[projectName];
+
+  const {
+    title,
+    description,
+    projectLink,
+    projectBackground,
+    projectStaticPreview,
+  } = data;
+
   return (
     <div className="project__information u-container">
       <div className="project-page">
         <div className="project-page__left">
-          <h1 className="project__name">Fictious Client</h1>
-          <p className="project__desc">
-            Fictious Client is a collection of over 10 beautiful and elegantly
-            designed, responsive landing pages for fictional product based
-            companies to learn more in depth about HTML, CSS and
-            Responsive-Design
-          </p>
-          <SecondaryTagButton url="https://github.com/abhu-A-J">
+          <h1 className="project__name">{title}</h1>
+          <p className="project__desc">{description}</p>
+          <SecondaryTagButton url={projectLink}>
             View Project
           </SecondaryTagButton>
         </div>
         <div className="project-page__right">
           <h2 className="project__background">Project Background</h2>
-          <p className="project__reason">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum
-            cum modi beatae itaque praesentium. Id asperiores magnam dolor
-            necessitatibus laborum fugiat quos inventore minus doloremque error
-            itaque tenetur consectetur dolores ipsum nihil ad, placeat
-            laudantium distinctio unde nam, consequatur harum. Quam at fuga
-            sapiente tempore magnam ratione, ab aperiam? Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Dolorum corporis minima, est
-            consequuntur ab quasi exercitationem? A error ratione voluptates?
-          </p>
+          <p className="project__reason">{projectBackground}</p>
           <h2 className="static__preview">Static Preview</h2>
           <div
             className="preview__collage"
             style={{
-              backgroundImage: `url("https://user-images.githubusercontent.com/49617450/90335496-0d375b00-dff3-11ea-8643-37c6f6b5f40c.png")`,
+              backgroundImage: `url(${projectStaticPreview})`,
             }}
           />
         </div>

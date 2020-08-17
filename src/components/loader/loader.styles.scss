@@ -1,0 +1,10 @@
+@import "../../styles/main";
+
+.loader__component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}

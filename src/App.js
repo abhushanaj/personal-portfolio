@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar/navbar.component";
 import HomePage from "./pages/homepage/homepage.component";
-
+import PageLoader from "./components/loader/loader.component";
 import Footer from "./components/footer/footer.component";
 
 import "./App.scss";
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoader />}>
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" exact component={AboutPage} />

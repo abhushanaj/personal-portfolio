@@ -18,7 +18,7 @@ const AboutMeCard = () => {
       />
       <div className="aboutme__image">
         <img
-          src="https://avatars2.githubusercontent.com/u/49617450?s=460&u=1cd8bdacdd13324f4220a9d6c3ea542526efc388&v=4"
+          src="https://user-images.githubusercontent.com/49617450/90396713-53a0be80-e0b4-11ea-9173-d49c096a2cda.jpeg"
           alt="Abhushan Adhikari Joshi"
         />
       </div>

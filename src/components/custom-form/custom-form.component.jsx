@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
+import { validateEmail, sendEmail } from "../../utils/email.utils";
+
 import { SubmitButton } from "../ button/button.component";
+
 import "./custom-form.styles.scss";
 
 const CustomForm = () => {
@@ -13,18 +16,23 @@ const CustomForm = () => {
     message: false,
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Form Submitted!!");
-    setEmail("");
-    setMessage("");
-    setUserName("");
-  };
+    const sendMessage = {
+      userName,
+      email,
+      message,
+    };
 
-  const validateEmail = (email) => {
-    const emailRegex = /^(([^<>()[\]\\.,;:\s@]+(\.[^<>()[\]\\.,;:\s@]+)*)|(.+))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const [response] = await sendEmail(sendMessage);
 
-    return !emailRegex.test(email);
+    if (response) {
+      console.log("Response from custom form", response);
+      setEmail("");
+      setMessage("");
+      setUserName("");
+      return;
+    }
   };
 
   const handleError = (field, state) => {

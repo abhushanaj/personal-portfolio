@@ -24,11 +24,11 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li className="navbar__item">
+        {/* <li className="navbar__item">
           <a href="#!" className="navbar__link">
             Experience
           </a>
-        </li>
+        </li> */}
         <li className="navbar__item">
           <a href="/#contact" className="navbar__link">
             Contact

@@ -57,7 +57,7 @@ const CustomForm = () => {
             required
             autoComplete="off"
           />
-          {error.userName && <small>Oops!! Enter your Name.</small>}
+          {error.userName && <small>Oops!! Don't leave it empty!.</small>}
         </div>
 
         <label htmlFor="email">Email:</label>

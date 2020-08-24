@@ -10,7 +10,17 @@ const projectList = [
     readMoreLink: "/details/fictitious-client",
     tagLists: ["HTML", "CSS", "Responsive Design"],
     coverImg:
-      "https://user-images.githubusercontent.com/49617450/90392005-b6da2300-e0ab-11ea-91b0-2ea828bcda73.png",
+      "https://user-images.githubusercontent.com/49617450/91013783-da4e2200-e605-11ea-8f2b-c2ae2854ed6d.png",
+  },
+  {
+    projectTitle: "Shoppingfy",
+    projectDescription: `Shoppingfy is a React-Redux application which utilizes your local storage to help you plan out your next perfect shopping trip . Plan out and save your shopping cart and view your shopped statistics all in one single application.`,
+    viewDemoLink: "https://shoppingfy.vercel.app/",
+    viewCodeLink: "https://github.com/abhu-A-J/shoppingfy",
+    readMoreLink: "/details/shoppingfy",
+    tagLists: ["React", "Redux", "React-Router", "Redux-Persist"],
+    coverImg:
+      "https://user-images.githubusercontent.com/49617450/91013393-43816580-e605-11ea-85e9-1342de135d4a.png",
   },
   {
     projectTitle: "Shortly",

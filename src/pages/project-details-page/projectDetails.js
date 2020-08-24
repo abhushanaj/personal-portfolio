@@ -12,6 +12,14 @@ const projectDetails = {
 		`,
     projectStaticPreview: `https://user-images.githubusercontent.com/49617450/90392005-b6da2300-e0ab-11ea-91b0-2ea828bcda73.png`,
   },
+  shoppingfy: {
+    title: "Shoppingfy",
+    description: `Shoppingfy is a React-Redux application which utilizes your local storage to help you plan out your next perfect shopping trip . Plan out and save your shopping cart and  view the shop statistics all in one single application.`,
+    projectLink: `https://shoppingfy.vercel.app/`,
+    projectBackground: `Let's be honest, we have all been there, trying to manage state in React and making sure we don't drill down our props down the component tree. Shoppingfy has a ton of state moving around, and it was built to strengthen my ability to learn proper state management using Redux along with it's React binding's and saving the store right on the local storage using Redux-Persist. So yes to a single source of truth about store and let's "mapStateToProps" and "dispatch" actions around.`,
+    projectStaticPreview:
+      "https://user-images.githubusercontent.com/49617450/91014219-a0315000-e606-11ea-9ec5-23eb3d791a0e.png",
+  },
   shortly: {
     title: "Shortly",
     description: `Shortly is a React-Redux Web Application with one single purpose and that's to shorten those long-ass URL's which are hard to remember at all times.`,

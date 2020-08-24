@@ -19,8 +19,8 @@ const AboutMeDescription = () => {
       </p>
       <p className="about-desc">
         I enjoy working on all things Web, and always look forward to meeting
-        new people, learning, and talking about my interests and passion over a
-        cup of coffee.
+        new people, learning, and talking about my interests and experience over
+        a hot beverage.
       </p>
     </>
   );

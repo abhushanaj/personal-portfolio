@@ -18,6 +18,14 @@ const ExperiencePage = lazy(() =>
   import("./pages/experience-page/experience-page.component")
 );
 
+const ProjectsPage = lazy(() =>
+  import("./pages/projects-page/projects-page.component")
+);
+
+const ContactPage = lazy(() =>
+  import("./pages/contact-page/contact-page.component")
+);
+
 function App() {
   return (
     <>
@@ -26,6 +34,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" exact component={AboutPage} />
+          <Route path="/projects" exact component={ProjectsPage} />
+          <Route path="/contact" exact component={ContactPage} />
+
           <Route path="/details/:projectName" component={ProjectDetailsPage} />
           <Route path="/experience" component={ExperiencePage} />
         </Switch>

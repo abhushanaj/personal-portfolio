@@ -12,8 +12,6 @@ const skillsSet = [
   "Redux",
   "Sass",
   "Styled-Components",
-  "TypeScript",
-  "Webpack",
   "Babel",
   "Git",
   "Github",

@@ -106,7 +106,7 @@
 
 .btn__group {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 75%;
   @media only screen and(max-width:1200px) {

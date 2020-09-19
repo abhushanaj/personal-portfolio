@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
 
 import "./button.styles.scss";
 
@@ -36,16 +35,3 @@ export const SecondaryTagButton = ({ children, url }) => {
     </a>
   );
 };
-
-const SecondaryButton = ({ children, routeTo, history }) => {
-  return (
-    <button
-      className="btn btn--secondary"
-      onClick={() => history.push(routeTo)}
-    >
-      {children}
-    </button>
-  );
-};
-
-export default withRouter(SecondaryButton);

@@ -1,7 +1,7 @@
 import React from "react";
 
 import TagLists from "../taglists/taglists.component";
-import SecondaryButton from "../ button/button.component";
+
 import { PrimaryButton, SecondaryTagButton } from "../ button/button.component";
 
 import "./project-preview-card.styles.scss";
@@ -12,7 +12,6 @@ const ProjectPreviewCard = (props) => {
     projectDescription,
     viewDemoLink,
     viewCodeLink,
-    readMoreLink,
     changedOrder,
     coverImg,
     tagLists,
@@ -38,7 +37,6 @@ const ProjectPreviewCard = (props) => {
         <div className="btn__group">
           <PrimaryButton url={viewDemoLink}>View Demo</PrimaryButton>
           <SecondaryTagButton url={viewCodeLink}>View Code</SecondaryTagButton>
-          <SecondaryButton routeTo={readMoreLink}>Read More</SecondaryButton>
         </div>
       </div>
     </article>

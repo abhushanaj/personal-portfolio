@@ -10,10 +10,6 @@ import "./App.scss";
 
 const AboutPage = lazy(() => import("./pages/aboutpage/aboutpage.component"));
 
-const ProjectDetailsPage = lazy(() =>
-  import("./pages/project-details-page/project-details-page.component")
-);
-
 const ExperiencePage = lazy(() =>
   import("./pages/experience-page/experience-page.component")
 );
@@ -36,8 +32,6 @@ function App() {
           <Route path="/about" exact component={AboutPage} />
           <Route path="/projects" exact component={ProjectsPage} />
           <Route path="/contact" exact component={ContactPage} />
-
-          <Route path="/details/:projectName" component={ProjectDetailsPage} />
           <Route path="/experience" component={ExperiencePage} />
         </Switch>
       </Suspense>

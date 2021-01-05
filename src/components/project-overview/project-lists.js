@@ -1,5 +1,14 @@
 const projectList = [
   {
+    projectTitle: "COVID Tracker",
+    projectDescription: `Live statistics and coronavirus news tracking the number of confirmed cases, recovered patients, tests, and death toll due to the COVID-19 coronavirus`,
+    viewDemoLink: "https://covid-19-tracker-peach.vercel.app",
+    viewCodeLink: "https://github.com/abhu-A-J/covid-19-tracker",
+    tagLists: ["TypeScript", "ChartsJS", "Leaflet Maps"],
+    coverImg:
+      "https://user-images.githubusercontent.com/49617450/103618547-287d1580-4f56-11eb-8c74-f5b28b371902.png",
+  },
+  {
     projectTitle: "Google Clone",
     projectDescription: `I guess the name says it all! It's a React and React-Router based Single Page Application meant to mimic the functionality for the Google Search Page. It uses Programmable Search Engine RESTful API along with React's Context API for state management.`,
     viewDemoLink: "https://google-clone-bay.vercel.app/",
